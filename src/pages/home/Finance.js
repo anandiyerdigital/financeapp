@@ -9,6 +9,8 @@ import TransactionList from '../../components/TransactionList';
 import {toast} from 'react-toastify'
 import {getAuth, onAuthStateChanged} from 'firebase/auth'
 import TransactionCharts from '../../components/TransactionCharts';
+import NyTimes from '../../components/NyTimes';
+import Weather from '../../components/Weather';
 
 
 export default function Finance() {
@@ -95,20 +97,20 @@ export default function Finance() {
         <div className="py-10 grid-cols-2">
           <header>
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <h1 className="text-3xl font-bold leading-tight tracking-tight text-gray-900">Dashboard</h1>
+              <h1 className="text-3xl font-bold leading-tight tracking-tight text-gray-900">Your Current Expenses</h1>
             </div>
           </header>
           <main>
             <div className="sm:px-6 lg:px-8 grid grid-cols-2">
               {/* Replace with your content */}
-              <div className="px-4 py-8 sm:px-0 ">
+              <div className="px-4 py-16 sm:px-0 ">
                
               <TransactionList transactions = {data} />
                
                 
               </div>
 
-              <div className="px-4 py-8 sm:px-0">
+              <div className="px-2 sm:px-0">
               <TransactionForm />
               </div>
 
@@ -116,9 +118,17 @@ export default function Finance() {
                <TransactionCharts data={data}/>
               </div>
 
+              
 
               {/* /End replace */}
             </div>
+
+            <div className="px-4 py-8 sm:px-0">
+               <NyTimes />
+              </div>
+
+              
+
           </main>
         </div>
       </div>

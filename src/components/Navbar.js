@@ -9,6 +9,7 @@ import { toast } from "react-toastify";
 import { useAuthContext } from "../hooks/useAuthContext";
 import { useNavigate } from "react-router-dom";
 import { useLogout } from "../hooks/useLogout";
+import Weather from "./Weather";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -26,6 +27,10 @@ export default function Navbar() {
     toast("You have been signed out");
     navigate("/");
   };
+
+
+  
+
 
   return (
     <Disclosure as="nav" className="bg-white shadow">
@@ -85,7 +90,11 @@ export default function Navbar() {
                   >
                     Calendar
                   </a>
+
+                  <Weather />
+
                 </div>
+               
               </div>
               <div className="flex items-center">
                 {!user && (
