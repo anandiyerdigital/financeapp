@@ -10,8 +10,8 @@ const [error, setError] = useState(null);
 
 
 
- const API_KEY = "RzC3p4UQLmJJzU0TRnH23qHTdB2ZYctz"
-const url = `https://api.nytimes.com/svc/mostpopular/v2/emailed/1.json?api-key=${API_KEY}`
+
+const url = `https://api.nytimes.com/svc/mostpopular/v2/emailed/1.json?api-key=${process.env.REACT_APP_NYTIMES_API}`
 
 const options = {
     method: 'POST',
