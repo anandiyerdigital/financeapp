@@ -6,7 +6,7 @@ const Weather = () => {
 
     const [data, setData] = useState([]);
     const [lat, setLat] = useState(37.8806)
-    const [lon, setLong] = useState(84.5730)
+    const [lon, setLong] = useState(-84.5730)
     
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.REACT_APP_WEATHER_API}`
     
@@ -26,7 +26,7 @@ const Weather = () => {
  
     const getdata = async () => {
 
-        const response = await fetch(url)
+        const response = await fetch(url) 
        
         const data1 = await response.json()
         
@@ -46,8 +46,9 @@ const Weather = () => {
        
         navigator.geolocation.getCurrentPosition(function(position) {
             setLat(position.coords.latitude)
-             
+             console.log(lat)
             setLong(position.coords.longitude)
+            console.log(lon)
            
           });
 
@@ -70,7 +71,7 @@ const Weather = () => {
         <div className="flex flex-wrap items-center justify-between">
           
           <div className="text-blue-600"> 
-          <p>Weather is <b>{data.weather[0].description}</b> in { data.name}. </p> 
+         {lon && <p>Weather is <b>{data.weather[0].description}</b> in { data.name}. </p>  } 
           </div>
           
         
