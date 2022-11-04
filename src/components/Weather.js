@@ -5,8 +5,8 @@ import { SunIcon, XMarkIcon } from '@heroicons/react/24/outline'
 const Weather = () => {
 
     const [data, setData] = useState([]);
-    const [lat, setLat] = useState()
-    const [lon, setLong] = useState()
+    const [lat, setLat] = useState(37.8806)
+    const [lon, setLong] = useState(84.5730)
     
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.REACT_APP_WEATHER_API}`
     
@@ -55,7 +55,7 @@ const Weather = () => {
     
     
      
-       }, []);
+       }, [lat, lon]);
 
  
 
@@ -70,7 +70,7 @@ const Weather = () => {
         <div className="flex flex-wrap items-center justify-between">
           
           <div className="text-blue-600"> 
-          <p>Weather is <b>{data.weather[0].description}</b> in { data.name} </p>
+          <p>Weather is <b>{data.weather[0].description}</b> in { data.name}. </p> 
           </div>
           
         
