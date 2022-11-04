@@ -10,6 +10,8 @@ import { useAuthContext } from "./hooks/useAuthContext";
 import Dashboard from "./components/Dashboard";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 import Finance from "./pages/home/Finance";
+import ImageGeneration  from './components/ImageGeneration'
+import TextGeneration from "./components/TextGeneration";
 
 function App() {
   const { authIsReady, user } = useAuthContext();
@@ -22,9 +24,10 @@ function App() {
           <Route path="/finance" element={<Finance />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/signup" element={<Signup />}></Route>
-
+          <Route path="/aiimage" element={<ImageGeneration />}></Route>
+          <Route path="/aitext" element={<TextGeneration />}></Route>
           <Route
-            path="/dashboard"
+            path="/aitools"
             element={
               <ProtectedRoute>
                 <Dashboard />

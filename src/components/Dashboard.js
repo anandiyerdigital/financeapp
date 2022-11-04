@@ -1,8 +1,9 @@
 import React from 'react'
+import ImageGeneration from './ImageGeneration'
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <ImageGeneration />
   )
 }
 

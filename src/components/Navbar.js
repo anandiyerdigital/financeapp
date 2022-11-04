@@ -10,6 +10,7 @@ import { useAuthContext } from "../hooks/useAuthContext";
 import { useNavigate } from "react-router-dom";
 import { useLogout } from "../hooks/useLogout";
 import Weather from "./Weather";
+import FlyoutMenu from "./FlyoutMenu";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -73,10 +74,10 @@ export default function Navbar() {
                   </Link>
 
                   <Link
-                    to="/dashboard"
+                    to="/aitools"
                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
                   >
-                    Dashboard
+                    AI Tools
                   </Link>
                   <Link
                     to="/finance"
@@ -88,7 +89,7 @@ export default function Navbar() {
                     href="#"
                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
                   >
-                    Calendar
+                  <FlyoutMenu />  
                   </a>
 
                   <Weather />
