@@ -85,19 +85,24 @@ export default function FlyoutMenu() {
               <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                 <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
                   {solutions.map((item) => (
-                    <a
+                    <div
                       key={item.name}
-                      href={item.href}
+                      
                       className="-m-3 flex items-start rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50"
                     >
-                      <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
+                    <Link to={item.href}> 
+                    
+                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
                         <item.icon className="h-6 w-6" aria-hidden="true" />
                       </div>
                       <div className="ml-4">
                         <p className="text-base font-medium text-gray-900">{item.name}</p>
                         <p className="mt-1 text-sm text-gray-500">{item.description}</p>
                       </div>
-                    </a>
+                    
+                     </Link>
+                      
+                    </div>
                   ))}
                 </div>
                 <div className="bg-gray-50 p-5 sm:p-8">
