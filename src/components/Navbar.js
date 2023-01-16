@@ -266,6 +266,7 @@ export default function Navbar() {
           <Disclosure.Panel className="md:hidden">
             <div className="space-y-1 pt-2 pb-3">
               {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
+              <Link to="/">
               <Disclosure.Button
                 as="a"
                 href="#"
@@ -273,27 +274,37 @@ export default function Navbar() {
               >
                 Dashboard
               </Disclosure.Button>
+              </Link>
               <Disclosure.Button
                 as="a"
-                href="#"
+                href="/aitext"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
               >
-                Team
+                Alltech Text Generation
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href="#"
+                href="/aiimage"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
               >
-                Projects
+                Alltech Image Generation
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href="#"
+                href="/aigpt"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
               >
-                Calendar
+                Alltech GPT
               </Disclosure.Button>
+
+              <Disclosure.Button
+                as="a"
+                href="/aiimageclassifier"
+                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
+              >
+                Alltech Image Classfier
+              </Disclosure.Button>
+
             </div>
             <div className="border-t border-gray-200 pt-4 pb-3">
               <div className="flex items-center px-4 sm:px-6">

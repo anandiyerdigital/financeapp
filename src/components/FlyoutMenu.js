@@ -1,6 +1,6 @@
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { Fragment } from "react";
+import { Popover, Transition } from "@headlessui/react";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 import { Link } from "react-router-dom";
 
@@ -11,44 +11,52 @@ import {
   DocumentChartBarIcon,
   ShieldCheckIcon,
   Squares2X2Icon,
-} from '@heroicons/react/24/outline'
+} from "@heroicons/react/24/outline";
 
 const solutions = [
   {
-    name: 'Text Generation',
-    description: 'Get a better understanding of where your traffic is coming from.',
-    href: '/aitext',
+    name: "AlltechTextGeneration",
+    description:
+      "Get a better understanding of where your traffic is coming from.",
+    href: "/aitext",
     icon: ChartBarIcon,
   },
   {
-    name: 'Image Generation',
-    description: 'Speak directly to your customers in a more meaningful way.',
-    href: '/aiimage',
+    name: "AlltechImageGeneration",
+    description: "Speak directly to your customers in a more meaningful way.",
+    href: "/aiimage",
     icon: CursorArrowRaysIcon,
   },
-  { name: 'Security', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
   {
-    name: 'Integrations',
+    name: "AlltechGTP",
+    description: "Your customers' data will be safe and secure.",
+    href: "/aigpt",
+    icon: ShieldCheckIcon,
+  },
+  {
+    name: "AlltechImageClassifier",
     description: "Connect with third-party tools that you're already using.",
-    href: '#',
+    href: "/aiimageclassifier",
     icon: Squares2X2Icon,
   },
   {
-    name: 'Automations',
-    description: 'Build strategic funnels that will drive your customers to convert',
-    href: '#',
+    name: "Automations",
+    description:
+      "Build strategic funnels that will drive your customers to convert",
+    href: "#",
     icon: ArrowPathIcon,
   },
   {
-    name: 'Reports',
-    description: 'Get detailed reports that will help you make more informed decisions',
-    href: '#',
+    name: "Reports",
+    description:
+      "Get detailed reports that will help you make more informed decisions",
+    href: "#",
     icon: DocumentChartBarIcon,
   },
-]
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function FlyoutMenu() {
@@ -58,15 +66,15 @@ export default function FlyoutMenu() {
         <>
           <Popover.Button
             className={classNames(
-              open ? 'text-gray-900' : 'text-gray-500',
-              'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+              open ? "text-gray-900" : "text-gray-500",
+              "group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
             )}
           >
             <span>AI Tools</span>
             <ChevronDownIcon
               className={classNames(
-                open ? 'text-gray-600' : 'text-gray-400',
-                'ml-2 h-5 w-5 transition duration-150 ease-in-out group-hover:text-gray-500'
+                open ? "text-gray-600" : "text-gray-400",
+                "ml-2 h-5 w-5 transition duration-150 ease-in-out group-hover:text-gray-500"
               )}
               aria-hidden="true"
             />
@@ -87,39 +95,23 @@ export default function FlyoutMenu() {
                   {solutions.map((item) => (
                     <div
                       key={item.name}
-                      
                       className="-m-3 flex items-start rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50"
                     >
-                    <Link to={item.href}> 
-                    
-                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
-                        <item.icon className="h-6 w-6" aria-hidden="true" />
-                      </div>
-                      <div className="ml-4">
-                        <p className="text-base font-medium text-gray-900">{item.name}</p>
-                        <p className="mt-1 text-sm text-gray-500">{item.description}</p>
-                      </div>
-                    
-                     </Link>
-                      
+                      <Link to={item.href}>
+                        <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
+                          <item.icon className="h-6 w-6" aria-hidden="true" />
+                        </div>
+                        <div className="ml-4">
+                          <p className="text-base font-medium text-gray-900">
+                            {item.name}
+                          </p>
+                          <p className="mt-1 text-sm text-gray-500">
+                            {item.description}
+                          </p>
+                        </div>
+                      </Link>
                     </div>
                   ))}
-                </div>
-                <div className="bg-gray-50 p-5 sm:p-8">
-                  <a
-                    href="#"
-                    className="-m-3 flow-root rounded-md p-3 transition duration-150 ease-in-out hover:bg-gray-100"
-                  >
-                    <span className="flex items-center">
-                      <span className="text-base font-medium text-gray-900">Enterprise</span>
-                      <span className="ml-3 inline-flex items-center rounded-full bg-indigo-100 px-3 py-0.5 text-xs font-medium leading-5 text-indigo-800">
-                        New
-                      </span>
-                    </span>
-                    <span className="mt-1 block text-sm text-gray-500">
-                      Empower your entire team with even more advanced tools.
-                    </span>
-                  </a>
                 </div>
               </div>
             </Popover.Panel>
@@ -127,5 +119,5 @@ export default function FlyoutMenu() {
         </>
       )}
     </Popover>
-  )
+  );
 }

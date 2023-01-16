@@ -22,6 +22,7 @@ export default function TextGeneration() {
 
 
     const configuration = new Configuration({
+        organization: process.env.REACT_APP_ORGANIZATION,
         apiKey: process.env.REACT_APP_DALLEIMAGE,
     });
 

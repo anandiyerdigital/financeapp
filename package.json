@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@azure/cognitiveservices-customvision-prediction": "^5.1.2",
+    "@azure/cognitiveservices-customvision-training": "^5.2.0",
     "@headlessui/react": "^1.7.3",
     "@heroicons/react": "^2.0.13",
     "@testing-library/jest-dom": "^5.14.1",
