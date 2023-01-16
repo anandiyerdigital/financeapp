@@ -44,12 +44,18 @@ const AlltechImageClassifier = () => {
   };
 
   const findMax = () => {
-    const temp = result.reduce((prev, current) => {
-      return prev.probability > current.probability ? prev : current;
-    });
 
-    setHighScore(temp);
+    if(result){
+        const temp = result.reduce((prev, current) => {
+            return prev.probability > current.probability ? prev : current;
+          });
+
+          setHighScore(temp);
     console.log("highscore is", highScore);
+    }
+    
+
+    
   };
 
   return (
