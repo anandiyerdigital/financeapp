@@ -14,6 +14,7 @@ import ImageGeneration  from './components/ImageGeneration'
 import TextGeneration from "./components/TextGeneration";
 import AlltechGPT from "./components/AlltechGPT";
 import AlltechImageClassifier from "./components/AlltechImageClassifier";
+import AlltechCropScience from "./components/AlltechCropScience";
 
 function App() {
   const { authIsReady, user } = useAuthContext();
@@ -30,6 +31,7 @@ function App() {
           <Route path="/aitext" element={<TextGeneration />}></Route>
           <Route path="/aigpt" element={<AlltechGPT />}></Route>
           <Route path="/aiimageclassifier" element={<AlltechImageClassifier />}></Route>
+          <Route path="/aialltechcropscience" element={<AlltechCropScience />}></Route>
           <Route
             path="/aitools"
             element={

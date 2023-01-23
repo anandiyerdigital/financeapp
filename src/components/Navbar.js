@@ -73,12 +73,7 @@ export default function Navbar() {
                     Home
                   </Link>
 
-                  <Link
-                    to="/aitools"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                  >
-                    AI Tools
-                  </Link>
+                
                   <Link
                     to="/finance"
                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
@@ -303,6 +298,14 @@ export default function Navbar() {
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
               >
                 Alltech Image Classfier
+              </Disclosure.Button>
+
+              <Disclosure.Button
+                as="a"
+                href="/aialltechcropscience"
+                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
+              >
+                Alltech Crop Science
               </Disclosure.Button>
 
             </div>

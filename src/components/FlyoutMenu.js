@@ -40,10 +40,10 @@ const solutions = [
     icon: Squares2X2Icon,
   },
   {
-    name: "Automations",
+    name: "Alltech Crop Science",
     description:
-      "Build strategic funnels that will drive your customers to convert",
-    href: "#",
+      "Plant identification and disease identification ",
+    href: "/aialltechcropscience",
     icon: ArrowPathIcon,
   },
   {
