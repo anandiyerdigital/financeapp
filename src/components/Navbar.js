@@ -308,6 +308,14 @@ export default function Navbar() {
                 Alltech Crop Science
               </Disclosure.Button>
 
+              <Disclosure.Button
+                as="a"
+                href="/aialltechcropsciencehealth"
+                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
+              >
+                Alltech Crop Science Health
+              </Disclosure.Button>
+
             </div>
             <div className="border-t border-gray-200 pt-4 pb-3">
               <div className="flex items-center px-4 sm:px-6">

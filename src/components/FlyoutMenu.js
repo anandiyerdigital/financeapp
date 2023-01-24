@@ -47,10 +47,10 @@ const solutions = [
     icon: ArrowPathIcon,
   },
   {
-    name: "Reports",
+    name: "Alltech Crop Science Health",
     description:
-      "Get detailed reports that will help you make more informed decisions",
-    href: "#",
+      "Disease Identification",
+    href: "/aialltechcropsciencehealth",
     icon: DocumentChartBarIcon,
   },
 ];
