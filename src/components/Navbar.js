@@ -59,7 +59,7 @@ export default function Navbar() {
                   />
                   <img
                     className="hidden h-8 w-auto lg:block"
-                    src="https://www.alltech.com/sites/default/files/2018-05/alltech_0.png"
+                    src="https://www.Digital.com/sites/default/files/2018-05/Digital_0.png"
                     alt="Your Company"
                   />
                 </div>
@@ -275,21 +275,21 @@ export default function Navbar() {
                 href="/aitext"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
               >
-                Alltech Text Generation
+                Digital Text Generation
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="/aiimage"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
               >
-                Alltech Image Generation
+                Digital Image Generation
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="/aigpt"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
               >
-                Alltech GPT
+                Digital GPT
               </Disclosure.Button>
 
               <Disclosure.Button
@@ -297,23 +297,23 @@ export default function Navbar() {
                 href="/aiimageclassifier"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
               >
-                Alltech Image Classfier
+                Digital Image Classfier
               </Disclosure.Button>
 
               <Disclosure.Button
                 as="a"
-                href="/aialltechcropscience"
+                href="/aiDigitalcropscience"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
               >
-                Alltech Crop Science
+                Digital Crop Science
               </Disclosure.Button>
 
               <Disclosure.Button
                 as="a"
-                href="/aialltechcropsciencehealth"
+                href="/aiDigitalcropsciencehealth"
                 className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
               >
-                Alltech Crop Science Health
+                Digital Crop Science Health
               </Disclosure.Button>
 
             </div>

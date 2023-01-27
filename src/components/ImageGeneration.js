@@ -68,7 +68,7 @@ export default function Home() {
           <h1 className="text-5xl font-bold">AI Image Generation Bot</h1>
           
           <p className="py-6">
-          I am a highly intelligent image generation bot built by Alltech Creative Team. If you ask me to create an image, I will generate a realistic image. If you ask me create a ficticious, unrealistic, and imaginary image then i will do my best.
+          I am a highly intelligent image generation bot built by Digital Creative Team. If you ask me to create an image, I will generate a realistic image. If you ask me create a ficticious, unrealistic, and imaginary image then i will do my best.
           </p>
 
           <form onSubmit={onSubmit} method="post">

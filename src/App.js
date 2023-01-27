@@ -12,10 +12,10 @@ import { ProtectedRoute } from "./components/ProtectedRoute";
 import Finance from "./pages/home/Finance";
 import ImageGeneration  from './components/ImageGeneration'
 import TextGeneration from "./components/TextGeneration";
-import AlltechGPT from "./components/AlltechGPT";
-import AlltechImageClassifier from "./components/AlltechImageClassifier";
-import AlltechCropScience from "./components/AlltechCropScience";
-import AlltechCropScienceHealth from "./components/AlltechCropScienceHealth";
+import DigitalGPT from "./components/DigitalGPT";
+import DigitalImageClassifier from "./components/DigitalImageClassifier";
+import DigitalCropScience from "./components/DigitalCropScience";
+import DigitalCropScienceHealth from "./components/DigitalCropScienceHealth";
 
 function App() {
   const { authIsReady, user } = useAuthContext();
@@ -30,10 +30,10 @@ function App() {
           <Route path="/signup" element={<Signup />}></Route>
           <Route path="/aiimage" element={<ImageGeneration />}></Route>
           <Route path="/aitext" element={<TextGeneration />}></Route>
-          <Route path="/aigpt" element={<AlltechGPT />}></Route>
-          <Route path="/aiimageclassifier" element={<AlltechImageClassifier />}></Route>
-          <Route path="/aialltechcropscience" element={<AlltechCropScience />}></Route>
-          <Route path="/aialltechcropsciencehealth" element={<AlltechCropScienceHealth />}></Route>
+          <Route path="/aigpt" element={<DigitalGPT />}></Route>
+          <Route path="/aiimageclassifier" element={<DigitalImageClassifier />}></Route>
+          <Route path="/aiDigitalcropscience" element={<DigitalCropScience />}></Route>
+          <Route path="/aiDigitalcropsciencehealth" element={<DigitalCropScienceHealth />}></Route>
           <Route
             path="/aitools"
             element={

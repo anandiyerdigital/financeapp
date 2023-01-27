@@ -59,7 +59,7 @@ export default function TextGeneration() {
           <h1 className="text-5xl font-bold">AI Bot</h1>
           
           <p className="py-6">
-          I am a highly intelligent question answering bot built by Alltech Creative Team. If you ask me a question that is rooted in truth, I will give you the answer. If you ask me a question that is nonsense, trickery, or has no clear answer, I will respond with "Unknown".
+          I am a highly intelligent question answering bot built by Digital Creative Team. If you ask me a question that is rooted in truth, I will give you the answer. If you ask me a question that is nonsense, trickery, or has no clear answer, I will respond with "Unknown".
           </p>
 
           <form onSubmit={onSubmit} method="post">

@@ -6,7 +6,7 @@ import PlantId from "../assets/plantid.png";
 
 import axios from "axios";
 
-const AlltechCropScience = () => {
+const DigitalCropScience = () => {
   const [image, setImage] = useState(null);
   const [result, setResult] = useState();
   const [plantData, setPlantData] = useState(null);
@@ -201,4 +201,4 @@ const AlltechCropScience = () => {
   );
 };
 
-export default AlltechCropScience;
+export default DigitalCropScience;

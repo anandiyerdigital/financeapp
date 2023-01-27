@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import TMRimage from "../images/tmr.png";
 
-const AlltechImageClassifier = () => {
+const DigitalImageClassifier = () => {
   const [image, setImage] = useState(null);
   const [result, setResult] = useState(null);
   const [highScore, setHighScore] = useState(null);
@@ -163,4 +163,4 @@ const AlltechImageClassifier = () => {
   );
 };
 
-export default AlltechImageClassifier;
+export default DigitalImageClassifier;

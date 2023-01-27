@@ -15,42 +15,42 @@ import {
 
 const solutions = [
   {
-    name: "AlltechTextGeneration",
+    name: "DigitalTextGeneration",
     description:
       "Get a better understanding of where your traffic is coming from.",
     href: "/aitext",
     icon: ChartBarIcon,
   },
   {
-    name: "AlltechImageGeneration",
+    name: "DigitalImageGeneration",
     description: "Speak directly to your customers in a more meaningful way.",
     href: "/aiimage",
     icon: CursorArrowRaysIcon,
   },
   {
-    name: "AlltechGTP",
+    name: "DigitalGTP",
     description: "Your customers' data will be safe and secure.",
     href: "/aigpt",
     icon: ShieldCheckIcon,
   },
+  // {
+  //   name: "DigitalImageClassifier",
+  //   description: "Connect with third-party tools that you're already using.",
+  //   href: "/aiimageclassifier",
+  //   icon: Squares2X2Icon,
+  // },
   {
-    name: "AlltechImageClassifier",
-    description: "Connect with third-party tools that you're already using.",
-    href: "/aiimageclassifier",
-    icon: Squares2X2Icon,
-  },
-  {
-    name: "Alltech Crop Science",
+    name: "Digital Crop Science",
     description:
       "Plant identification and disease identification ",
-    href: "/aialltechcropscience",
+    href: "/aiDigitalcropscience",
     icon: ArrowPathIcon,
   },
   {
-    name: "Alltech Crop Science Health",
+    name: "Digital Crop Science Health",
     description:
       "Disease Identification",
-    href: "/aialltechcropsciencehealth",
+    href: "/aiDigitalcropsciencehealth",
     icon: DocumentChartBarIcon,
   },
 ];
