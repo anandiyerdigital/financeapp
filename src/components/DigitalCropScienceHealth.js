@@ -139,9 +139,9 @@ const DigitalCropScienceHealth = () => {
               Biological: {plantData?.disease_details?.treatment.biological[0]}
             </p>
 
-            <p className="py-2">
+            {/* <p className="py-2">
               Chemical: {plantData?.disease_details?.treatment.chemical[0]}
-            </p>
+            </p> */}
             <p className="py-2">
               Prevention:{" "}
               {plantData?.disease_details?.treatment.prevention.map(
