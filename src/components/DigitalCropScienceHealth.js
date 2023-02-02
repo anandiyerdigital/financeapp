@@ -140,7 +140,7 @@ const DigitalCropScienceHealth = () => {
             </p>
 
             {/* <p className="py-2">
-              Chemical: {plantData?.disease_details?.treatment.chemical[0]}
+              Chemical: {plantData?.disease_details?.treatment.chemical[0]} 
             </p> */}
             <p className="py-2">
               Prevention:{" "}
